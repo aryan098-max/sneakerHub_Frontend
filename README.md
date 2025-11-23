@@ -17,13 +17,29 @@
 1. Header - Made it responsive
 2. Hero Banner - Made it responsive 
 3. Hero Banner 2 - Made it responsive 
-4. Footer
+4. Footer 
+    - Define Footer for Mobile View
+    - Define Footer for Desktop View
+
 5. Small Caraousel
     - Caraousel Card
     - line-through (creates discount price)
     - .toLocaleString() (adds comma to number)
-6. Entire Set
+
+6. Entire Set Component
+
 7. Shop Component
     - Calling Inside banner
-    - Defining Shop
+    - Define Shop
+
+8. Video Container
+
+9. Layouts Folder 
+   - Body.jsx
+
+10. Pages
+    - customer 
+        - All the customer components
+    - policy
+        - All the policy components
 
