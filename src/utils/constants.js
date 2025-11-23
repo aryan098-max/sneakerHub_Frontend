@@ -1,0 +1,10 @@
+export const LOGO = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1761538342/sneakerLogo-removebg-preview_veoj4v.png";
+export const PROFILE_ICON = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1761539702/profile_cdtojj.png";
+export const WHISHLIST_ICON = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1761991017/e-commerce_pvgbnm.png";
+export const HERO_BANNER = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1762249288/herobanner2_kbxttq.png";
+export const HERO_BANNER2= "https://res.cloudinary.com/drk7m7qcx/image/upload/v1762249817/banner3_efhani.png";
+export const NIKE = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1762608497/entireset_zsirex.jpg";
+export const PUMA ="https://res.cloudinary.com/drk7m7qcx/image/upload/v1762608497/puma_k9leqm.jpg";
+export const ADIDAS = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1762608497/adidas_fjs32z.jpg";
+export const UNDER_ARMOUR ="https://res.cloudinary.com/drk7m7qcx/image/upload/v1762608497/underarmour_zsu7cp.jpg";
+export const NIKE_JORDAN = "https://res.cloudinary.com/drk7m7qcx/image/upload/v1762848818/NikeJordan_ptet9d.png";
