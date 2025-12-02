@@ -25,7 +25,7 @@ const ShippingPolicy = () => {
 
         <p>In case of delays due to courier or unforeseen events, our support team will keep you informed.</p>
 
-        <p className='font-semibold'>For support, email srisriportlp@gmail.com or call +91-8052747236</p>
+        <p className='font-semibold'>For support, 📧 Email at: ali.monish260@gmail.com</p>
       </div>
 
     </div>

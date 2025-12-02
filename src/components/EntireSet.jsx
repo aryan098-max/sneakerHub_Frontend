@@ -1,4 +1,3 @@
-import React from 'react'
 import { ADIDAS, NIKE, PUMA, UNDER_ARMOUR } from '../utils/constants'
 
 const EntireSet = () => {

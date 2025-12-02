@@ -12,6 +12,13 @@ import AboutUs from './pages/customer/AboutUs';
 import Shop from './components/Shop';
 import FAQs from './pages/customer/FAQs';
 import TrackOrder from './pages/customer/TrackOrder';
+import New from './pages/navpages/New';
+import Men from './pages/navpages/Men';
+import Women from './pages/navpages/Women';
+import Sports from './pages/navpages/Sports';
+import Cart from './pages/navpages/Cart';
+import Whishlist from './pages/navpages/Whishlist';
+
 
 const appRotuer = createBrowserRouter([{
     path:"/",
@@ -20,6 +27,31 @@ const appRotuer = createBrowserRouter([{
       {
         index:true,
         element:<MainContianer/>
+      },
+      {
+        path:"new",
+        element:<New/>
+      },
+       {
+        path:"men",
+        element:<Men/>
+      },
+       {
+        path:"women",
+        element:<Women/>
+      },
+       {
+        path:"sports",
+        element:<Sports/>
+      },
+      {
+        path:"bag",
+        element:<Cart/>
+      },
+      {
+        path:"whishlist",
+        element:<Whishlist/>
+      
       },
       {
         path:"policy",

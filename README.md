@@ -42,4 +42,11 @@
         - All the customer components
     - policy
         - All the policy components
+    - New
+    - Men
+    - Women
+    - Sports
+
+11. My Account
+    
 

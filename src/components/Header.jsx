@@ -3,7 +3,7 @@ import {Link} from 'react-router'
 import { LOGO, PROFILE_ICON } from '../utils/constants';
 import { Bars3Icon, MagnifyingGlassIcon, HeartIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 
-const Shoes = () => {
+const Header = () => {
 
   const [open, setOpen] = useState(false)
 
@@ -28,23 +28,23 @@ const Shoes = () => {
             </div>
 
             <div className='lg:flex hidden'> 
-              <Link to="" className="text-white font-bold mx-5">New</Link>
-              <Link to="" className="text-white font-bold mx-5">Men</Link>
-              <Link to="" className="text-white font-bold mx-5">Women</Link>
-              <Link to="" className="text-white font-bold mx-5">Sports</Link>
+              <Link to="/new" className="text-white font-bold mx-5">New</Link>
+              <Link to="/men" className="text-white font-bold mx-5">Men</Link>
+              <Link to="/women" className="text-white font-bold mx-5">Women</Link>
+              <Link to="/sports" className="text-white font-bold mx-5">Sports</Link>
             </div> 
 
             <div className={`lg:hidden rounded-lg absolute left-0 w-1/2 top-full bg-gray-900 shadow-md transition-all duration-300 z-10 ${open?"block":"hidden"}`}>
-                <Link to="" className="block px-4 py-2 text-white border-b border-gray-700">
+                <Link to="/new" className="block px-4 py-2 text-white border-b border-gray-700">
                   New
                 </Link>
-                <Link to="" className="block px-4 py-2 text-white border-b border-gray-700">
+                <Link to="/men" className="block px-4 py-2 text-white border-b border-gray-700">
                   Men
                 </Link>
-                <Link to="" className="block px-4 py-2 text-white border-b border-gray-700">
+                <Link to="/women" className="block px-4 py-2 text-white border-b border-gray-700">
                   Women
                 </Link>
-                <Link to="" className="block px-4 py-2 text-white">
+                <Link to="/sports" className="block px-4 py-2 text-white">
                   Sports
                 </Link>
             </div>
@@ -62,11 +62,11 @@ const Shoes = () => {
           </div>
           
           <div className='flex items-center'>
-             <Link to=''>
+             <Link to='/whishlist'>
               <HeartIcon className="hidden lg:block w-7 h-7 mx-2 text-white" />
              </Link>
 
-              <Link to=''>
+              <Link to='/bag'>
                 <ShoppingBagIcon className="w-7 h-7 mx-2 text-white" />
              </Link>
           </div>
@@ -87,8 +87,8 @@ const Shoes = () => {
                   My Account
                 </a>
               </li>
-              <li className="border-b border-gray-700" ><Link to='' className='text-white text-lg px-4 py-2'>Whislist</Link></li>
-              <li className="border-b border-gray-700" ><Link to='' className='text-white text-lg px-4 py-2'>Orders</Link></li>
+              <li className="border-b border-gray-700" ><Link to='/whishlist' className='text-white text-lg px-4 py-2'>Whislist</Link></li>
+              <li className="border-b border-gray-700" ><Link to='' className='text-white text-lg px-4 py-2'>Check Order/Return</Link></li>
               <li className="border-b border-gray-700" ><Link to='' className='text-white text-lg px-4 py-2'>Language </Link></li>
               <li className="border-b border-gray-700" ><Link to='' className='text-white text-lg px-4 py-2'>Logout</Link></li>
             </ul>
@@ -99,4 +99,4 @@ const Shoes = () => {
   )
 }
 
-export default Shoes
+export default Header

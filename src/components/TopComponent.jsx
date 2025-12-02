@@ -1,5 +1,3 @@
-import React from 'react'
-
 const TopComponent = () => {
   return (
     <div className='text-center text-red-900 font-bold p-2'>
