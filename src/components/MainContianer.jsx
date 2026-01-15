@@ -1,15 +1,15 @@
-import Banner from './Banner';
+import HomeHero from './HomeHero';
 import SmallCarousel from './SmallCarousel';
-import EntireSet from './EntireSet';
+import BrandShowCase from './BrandShowCase';
 
 
 
 const MainContianer = () => {
   return (
     <div>
-        <Banner/>
+        <HomeHero/>
         <SmallCarousel/>
-        <EntireSet/>
+        <BrandShowCase/>
      </div>
   )
 }

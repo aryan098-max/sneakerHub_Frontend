@@ -14,7 +14,7 @@
 
 
 # Building Process
-1. Header - Made it responsive
+1. NavBar - Made it responsive
 2. Hero Banner - Made it responsive 
 3. Hero Banner 2 - Made it responsive 
 4. Footer 
@@ -47,6 +47,13 @@
     - Women
     - Sports
 
-11. My Account
+11. Account Layout, SideBar
+    - account folder 
+        - Account
+        - Orders
+        - AccountSettings
+        - Addresses
+
+12. 
     
 

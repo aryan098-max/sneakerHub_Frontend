@@ -9,50 +9,50 @@ import ReturnRefundPolicy from './pages/policy/ReturnRefundPolicy';
 import TermsConditions from './pages/policy/TermsConditions';
 import CustomerContainer from './pages/customer/CustomerContainer';
 import AboutUs from './pages/customer/AboutUs';
-import Shop from './components/Shop';
+import Shop from './components/StoreCarousel';
 import FAQs from './pages/customer/FAQs';
 import TrackOrder from './pages/customer/TrackOrder';
 import New from './pages/navpages/New';
 import Men from './pages/navpages/Men';
 import Women from './pages/navpages/Women';
 import Sports from './pages/navpages/Sports';
-import Cart from './pages/navpages/Cart';
-import Whishlist from './pages/navpages/Whishlist';
-
+import Cart from './pages/navpages/ShoppingBag';
+import Wishlist from './pages/navpages/Wishlist';
+import Account from './pages/account/Account';
+import AccountSettings from './pages/account/AccountSettings';
+import AccountLayout from './layouts/AccountLayout';
+import Orders from './pages/account/Orders';
+import Addresses from './pages/account/Addresses';
+import appStore from './redux/appStore';
+import {Provider} from 'react-redux';
 
 const appRotuer = createBrowserRouter([{
+
     path:"/",
     element:<Body/>,
+
     children:[
+      { index:true, element:<MainContianer/> },
+      { path:"new", element:<New/> },
+      { path:"men", element:<Men/> },
+      { path:"women", element:<Women/> },
+      { path:"sports",element:<Sports/> },
+      { path:"bag", element:<Cart/> },
+      { path:"wishlist", element:<Wishlist/>},
+
+      // ACCOUNT SECTION
       {
-        index:true,
-        element:<MainContianer/>
+        path:"account",
+        element:<AccountLayout/>,
+        children:[
+          {index:true, element:<Account/>},
+          {path:"orders", element:<Orders/>},
+          {path:"addresses", element:<Addresses/>},
+          {path:"account-settings", element:<AccountSettings/>},
+        ]
       },
-      {
-        path:"new",
-        element:<New/>
-      },
-       {
-        path:"men",
-        element:<Men/>
-      },
-       {
-        path:"women",
-        element:<Women/>
-      },
-       {
-        path:"sports",
-        element:<Sports/>
-      },
-      {
-        path:"bag",
-        element:<Cart/>
-      },
-      {
-        path:"whishlist",
-        element:<Whishlist/>
       
-      },
+      // POLICY SECTION
       {
         path:"policy",
         element:<PolicyContainer/>,
@@ -64,6 +64,8 @@ const appRotuer = createBrowserRouter([{
           {path:"contact", element:<ContactUs/>},        
         ]
       },
+
+      // CUSTOMER SECTION
       {
         path:"customer",
         element:<CustomerContainer/>,
@@ -73,19 +75,20 @@ const appRotuer = createBrowserRouter([{
           {path:"faq", element:<FAQs/>},
           {path:"track", element:<TrackOrder/>},
         ]
-
-
       },
-
     ]
   }])
 
 const App = () => {
 
-
   return (
-    < RouterProvider router={appRotuer}/>
+    <Provider store={appStore}>
+       < RouterProvider router={appRotuer}/>
+    </Provider>
+     
+
+     
   )
 }
 
-export default App
+export default App;

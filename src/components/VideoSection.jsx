@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VideoContainer = () => {
+const VideoSection = () => {
   return (
     <div className='lg:pt-8'>
         <h1 className='text-center text-red-900 font-bold text-2xl'>Shop Introduction</h1>
@@ -19,4 +19,4 @@ const VideoContainer = () => {
   )
 }
 
-export default VideoContainer
+export default VideoSection

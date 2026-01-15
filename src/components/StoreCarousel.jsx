@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
-const Shop = () => {
+const StoreCarousel = () => {
 
   const carouselRef = useRef(null);
 
@@ -90,4 +90,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default StoreCarousel

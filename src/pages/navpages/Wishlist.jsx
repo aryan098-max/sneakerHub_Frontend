@@ -1,12 +1,19 @@
 import {HeartIcon} from "@heroicons/react/24/solid"
+import { useSelector } from "react-redux";
+import SignupPage from "../auth/SignupPage";
 
-const Whishlist = () => {
+const Wishlist = () => {
+
+  const user = useSelector((store)=>store?.user);
+
+  if(!user) return <SignupPage/>
+
   return (
     <div className='min-h-screen'>
       <div className='max-w-4xl mx-auto py-8 px-6'>
         <div className='bg-gray-100 shadow-md rounded-lg p-8'>
           <div className='flex items-center justify-between'>
-            <h1 className='text-2xl'>My Whishlist</h1>
+            <h1 className='text-2xl'>My Wishlist</h1>
             <h1 className='text-2xl'>0 items</h1>
           </div>
           <div className='my-4 border border-red-200'></div>
@@ -21,4 +28,4 @@ const Whishlist = () => {
   )
 }
 
-export default Whishlist;
+export default Wishlist;

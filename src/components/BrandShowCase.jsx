@@ -1,8 +1,8 @@
 import { ADIDAS, NIKE, PUMA, UNDER_ARMOUR } from '../utils/constants'
 
-const EntireSet = () => {
+const BrandShowCase = () => {
   return (
-    <div className='pt-8 pb-2 relative' >
+    <div className='my-8 relative' >
     <h1 className='text-center font-bold text-2xl'> Complete Set</h1>
     <h1 className='text-center font-bold text-xl py-2'>What's Stopping You - Contact Sneaker Hub</h1>
     <div className='flex justify-center items-center'>
@@ -50,4 +50,4 @@ const EntireSet = () => {
   )
 }
 
-export default EntireSet
+export default BrandShowCase

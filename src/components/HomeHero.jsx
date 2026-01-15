@@ -1,8 +1,8 @@
 import { HERO_BANNER, HERO_BANNER2 } from '../utils/constants';
-import Shop from './Shop';
-import VideoContainer from './VideoContainer';
+import StoreCarousel from './StoreCarousel';
+import VideoSection from './VideoSection';
 
-const Banner = () => {
+const HomeHero = () => {
   return (
     <div className='lg:pb-8'>
 
@@ -49,11 +49,11 @@ const Banner = () => {
     </div>
   
     <div className='p-2 m-2'>
-      <VideoContainer/>
+      <VideoSection/>
     </div>
     
     <div>
-      <Shop/>
+      <StoreCarousel/>
     </div>
 
     <div className='relative py-2'>
@@ -99,4 +99,4 @@ const Banner = () => {
 }
 
 
-export default Banner
+export default HomeHero

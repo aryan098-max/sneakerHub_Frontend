@@ -18,7 +18,7 @@ const Footer = () => {
     }
 
   return (
-    <div className="pt-10">
+    <div>
         <footer className="footer lg:hidden sm:footer-horizontal bg-gray-800 text-base-content py-10 px-4">
             
            <nav className="w-full">
