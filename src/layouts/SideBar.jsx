@@ -1,7 +1,14 @@
 import { NavLink } from "react-router";
 import { UserCircleIcon,  MapPinIcon, Cog6ToothIcon, ShoppingBagIcon, HeartIcon,} from "@heroicons/react/24/solid";
+import { useSelector } from "react-redux";
 
 const Sidebar = () => {
+
+  // suscribing to the store 
+  const user = useSelector((store)=>store?.user);
+
+  if(!user) return
+
   return (
     <div className="w-1/4 bg-gray-100 min-h-screen overflow-y-auto">
       <nav className="flex flex-col py-14 px-6 space-y-4">

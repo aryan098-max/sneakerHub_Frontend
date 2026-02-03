@@ -1,5 +1,5 @@
 import {ShoppingBagIcon} from "@heroicons/react/24/solid";
-import SignupPage from "../auth/SignupPage";
+import SignupPage from "../auth/page/SignupPage";
 import { useSelector} from "react-redux";
 
 const ShoppingBag = () => {

@@ -1,12 +1,12 @@
 import {HeartIcon} from "@heroicons/react/24/solid"
 import { useSelector } from "react-redux";
-import SignupPage from "../auth/SignupPage";
+import LoginControllerPage from "../auth/page/LoginControllerPage";
 
 const Wishlist = () => {
 
   const user = useSelector((store)=>store?.user);
 
-  if(!user) return <SignupPage/>
+  if(!user) return <LoginControllerPage/>
 
   return (
     <div className='min-h-screen'>

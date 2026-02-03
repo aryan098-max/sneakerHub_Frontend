@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
-import { BASE_URL } from "../../utils/constants";
+import { BASE_URL } from "../../../utils/constants";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { addUser } from "../../redux/userSlice";
+import { addUser } from "../../../redux/userSlice";
 import { ChevronLeftIcon, EyeSlashIcon, EyeIcon } from "@heroicons/react/24/solid";
 
-const SignupForm = ({setShowLoginForm, setIsProfileOpen, newUserData}) => {
+const SignupFormDropdown = ({setShowLoginForm, setIsProfileOpen, newUserData}) => {
 
   const [error, setError] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -191,4 +191,4 @@ const SignupForm = ({setShowLoginForm, setIsProfileOpen, newUserData}) => {
   )
 }
 
-export default SignupForm
+export default SignupFormDropdown

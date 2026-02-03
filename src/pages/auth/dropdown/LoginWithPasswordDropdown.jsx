@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { BASE_URL } from "../../utils/constants";
+import { BASE_URL } from "../../../utils/constants";
 import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 import { useDispatch } from "react-redux";
 import axios from "axios";
-import { addUser } from "../../redux/userSlice";
+import { addUser } from "../../../redux/userSlice";
 import { useNavigate } from "react-router";
 
-const LoginWithPassword = ({setShowLoginForm, setIsProfileOpen, setShowOtpForm}) => {
+const LoginWithPasswordDropdown = ({setShowLoginForm, setIsProfileOpen, setShowOtpForm}) => {
 
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
@@ -114,4 +114,4 @@ const LoginWithPassword = ({setShowLoginForm, setIsProfileOpen, setShowOtpForm})
     )
 }
 
-export default LoginWithPassword;
+export default LoginWithPasswordDropdown;

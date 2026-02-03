@@ -1,11 +1,11 @@
 import { Link } from "react-router"
 import { useNavigate } from "react-router";
-import { removeUser } from "../../redux/userSlice";
+import { removeUser } from "../../../redux/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-import { BASE_URL } from "../../utils/constants";
+import { BASE_URL } from "../../../utils/constants";
 
-const AccountLinks = ({setShowLoginForm, setIsProfileOpen}) => {
+const AccountLinksDropdown = ({setShowLoginForm, setIsProfileOpen}) => {
 
     // suscribing to the store 
     const user = useSelector((store)=>store?.user);
@@ -37,7 +37,6 @@ const AccountLinks = ({setShowLoginForm, setIsProfileOpen}) => {
         }
     }
 
-    
     const handleClick = ()=>{
 
         if(user){
@@ -85,4 +84,4 @@ const AccountLinks = ({setShowLoginForm, setIsProfileOpen}) => {
   )
 }
 
-export default AccountLinks;
+export default AccountLinksDropdown;

@@ -1,9 +1,13 @@
 import { useSelector } from "react-redux";
+import LoginControllerPage from "../auth/page/LoginControllerPage";
+
 
 const Account = () => {
 
   // suscribing to the store
   const user = useSelector((store)=>store?.user);
+
+  if (!user) return <LoginControllerPage/>
 
   return (
     <div>

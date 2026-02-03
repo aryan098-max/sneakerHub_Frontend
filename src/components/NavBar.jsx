@@ -1,5 +1,5 @@
-import LoginController from '../pages/auth/LoginController';
-import AccountLinks from '../pages/auth/AccountLinks';
+import LoginControllerDropdown from '../pages/auth/dropdown/LoginControllerDropdown';
+import AccountLinksDropdown from '../pages/auth/dropdown/AccountLinksDropdown';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import {Link} from 'react-router'
@@ -26,9 +26,9 @@ const NavBar = () => {
                 <button onClick={()=>setIsMobileNavOpen(!isMobileNavopen)}>
                   <Bars3Icon className="h-6 w-6 text-white" />
                 </button>
-              </div>
+            </div>
 
-            <div className='flex   justify-center items-center lg:justify-start w-full lg:w-auto pl-30 lg:pl-0'> 
+            <div className='flex justify-center items-center lg:justify-start w-full lg:w-auto pl-30 lg:pl-0'> 
               <Link to="/">
               <img
                 className="h-15 md:h-15 w-auto"
@@ -69,24 +69,24 @@ const NavBar = () => {
         </div>
 
         <div className="flex items-center gap-2">
-          <div className='flex items-center lg:border-2 border-black px-2'>
+
+        <div className='flex items-center lg:border-2 border-black px-2'>
             <button className='hidden lg:flex items-center font-bold px-2 text-white'>
             <MagnifyingGlassIcon className='text-white m-2 h-7 w-7 font-bold'/>
              SEARCH
             </button>
         </div>
           
-          <div className='flex items-center'>
-             <Link to='/wishlist'>
-              <HeartIcon className="hidden lg:block w-7 h-7 mx-2 text-white" />
-             </Link>
+        <div className='flex items-center'>
+            <Link to='/wishlist'>
+            <HeartIcon className="hidden lg:block w-7 h-7 mx-2 text-white" />
+            </Link>
 
-              <Link to='/bag'>
-                <ShoppingBagIcon className="w-7 h-7 mx-2 text-white" />
-             </Link>
-          </div>
+            <Link to='/bag'>
+              <ShoppingBagIcon className="w-7 h-7 mx-2 text-white" />
+            </Link>
+        </div>
 
-         
         {/* Profile Section */}
           <div className="relative z-10">
             <button
@@ -104,12 +104,12 @@ const NavBar = () => {
                   ${showLoginForm ? "w-72" : "w-60"}`}
               >
                 {(showLoginForm && !user )? (
-                  <LoginController
+                  <LoginControllerDropdown
                     setShowLoginForm={setShowLoginForm}
                     setIsProfileOpen={setIsProfileOpen}
                   />
                 ) : (
-                  <AccountLinks
+                  <AccountLinksDropdown
                     setShowLoginForm={setShowLoginForm}
                     setIsProfileOpen={setIsProfileOpen}
                   />
@@ -117,7 +117,6 @@ const NavBar = () => {
               </ul>
             )}
           </div>
-
 
         </div>
       </div>
